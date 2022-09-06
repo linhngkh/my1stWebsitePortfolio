@@ -1,0 +1,131 @@
+/* avatar set up */
+#main-content{
+  justify-content: center;
+  align-items: center;
+ text-align: center;
+}
+.avatar-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top:90px;
+ margin-bottom: 60px;
+}
+.avatar-container img{
+  width:7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.wrapper .static-txt{
+font-weight: 400;
+font-size: 60px;
+color: white;
+}
+
+.wrapper .dynamic-txts{
+margin-left: 15px;
+height: 80px;
+line-height: 90px;
+overflow: hidden;
+}
+
+.dynamic-txts li{
+  color:var(--bg-header-1);
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top:0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+  100%{
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left:0;
+  height:100%;
+  width:100%;
+  background: #0c0808;
+  border-left: 3px solid #a37ef8;
+  animation: typing 3s steps(12) infinite;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+/* end of main part */
+
+.introduction-container{
+  
+}
+.introduction-container .introduction{
+margin: 0 auto; 
+overflow: hidden;
+display: inline-block;
+margin-top: 30px;
+}
+
+.introduction-container .introduction h1{
+  color:rgb(223, 163, 71);
+  
+}
+
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  vertical-align: middle;
+  margin-top: 30px;
+}
+
+.skill-boxies {
+opacity: 0.9;
+width: 300px;
+background-color: rgb(139, 183, 74);
+border-radius: 5px;
+padding: 3px;
+
+}
+
+.skills .skill-boxies h3{
+  color:white;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+.skills .skill-boxies .dash{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2px;
+  background-color: #a37ef8;
+  border-radius: 10px;
+}
+
+.skills .skill-boxies h4{
+  color:white;
+}
