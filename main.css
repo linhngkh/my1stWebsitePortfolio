@@ -4,17 +4,18 @@
   align-items: center;
  text-align: center;
 }
-.avatar-container{
+.img-container{
  display: flex;
  justify-content: center;
  align-items: center;
- margin-top:90px;
- margin-bottom: 60px;
+ margin-top: 7rem;
+ margin-bottom: 30px;
 }
-.avatar-container img{
+.img-container img{
   width:7em;
   height: 7em;
   border-radius: 50%;
+
 }
 
 .wrapper{
@@ -27,7 +28,7 @@
 .wrapper .static-txt{
 font-weight: 400;
 font-size: 60px;
-color: white;
+color: var(--white);
 }
 
 .wrapper .dynamic-txts{
@@ -81,51 +82,101 @@ overflow: hidden;
 
 /* end of main part */
 
-.introduction-container{
-  
-}
+
 .introduction-container .introduction{
 margin: 0 auto; 
 overflow: hidden;
 display: inline-block;
 margin-top: 30px;
+
 }
 
 .introduction-container .introduction h1{
-  color:rgb(223, 163, 71);
-  
+ background-image: linear-gradient(90deg, purple, green);
+ -webkit-background-clip: text;
+ color:transparent;
+
 }
 
 .skills{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  vertical-align: middle;
   margin-top: 30px;
 }
 
 .skill-boxies {
 opacity: 0.9;
-width: 300px;
+width: 17em;
 background-color: rgb(139, 183, 74);
 border-radius: 5px;
-padding: 3px;
-
 }
 
 .skills .skill-boxies h3{
   color:white;
   letter-spacing: 0.5px;
   margin-top: 4px;
+letter-spacing: 2px;
 }
+
 .skills .skill-boxies .dash{
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-bottom: 8px;
   padding: 2px;
   background-color: #a37ef8;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 .skills .skill-boxies h4{
   color:white;
+  font-weight: 300;
 }
+
+/* media query main part */
+@media only screen and (max-width:768px ){
+  .wrapper{
+   display: block;
+ }
+
+    .wrapper .static-txt{
+      font-weight: 300;
+      font-size: 30px;
+  }
+
+  .dynamic-txts li{
+    font-size: 30px; 
+  }
+
+  .dynamic-txts li span::after{
+    content: "";
+    left:0;
+    height:150%;
+    width:100%;
+    background: #0c0808;
+    border-left: 2px solid #a37ef8;
+    animation: typing 3s steps(12) infinite;
+
+}
+
+.introduction-container{
+  margin-bottom: 30px;
+}
+
+.introduction-container .introduction h1{
+  font-size: 30px;
+}
+
+.skills{
+  display:inline-block;
+  
+}
+
+.skill-boxies {
+  width:300px;
+  padding:0;
+ margin: 10px;
+}
+
+}
+
+
