@@ -66,9 +66,10 @@ overflow: hidden;
   left:0;
   height:100%;
   width:100%;
-  background: #0c0808;
+  background: #23153c;
   border-left: 3px solid #a37ef8;
   animation: typing 3s steps(12) infinite;
+  
 }
 
 @keyframes typing {
@@ -82,13 +83,11 @@ overflow: hidden;
 
 /* end of main part */
 
-
 .introduction-container .introduction{
 margin: 0 auto; 
 overflow: hidden;
 display: inline-block;
 margin-top: 30px;
-
 }
 
 .introduction-container .introduction h1{
@@ -152,7 +151,7 @@ letter-spacing: 2px;
     left:0;
     height:150%;
     width:100%;
-    background: #0c0808;
+    background: #23153c;
     border-left: 2px solid #a37ef8;
     animation: typing 3s steps(12) infinite;
 
@@ -176,7 +175,6 @@ letter-spacing: 2px;
   padding:0;
  margin: 10px;
 }
-
 }
 
 

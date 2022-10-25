@@ -13,25 +13,34 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 html { 
-  background: url('background-image/image2.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: rgb(60, 85, 130);
   background-blend-mode: multiply;
+  height: 100%;
 }
 
 body{
   margin:0;
   font-family: 'Poppins', sans-serif;
   width:100%;
-  min-height: 90vh;
- 
+  min-height: 100%;
+ position: relative;
 }
+
+#animation-canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 /* set fixed scroll navbar with: position fixed, z-index */
 .nav-container{
   position: fixed;
@@ -170,5 +179,4 @@ display: table;
 #mobile-menu.is-active .bar:nth-child(3){
   transform: translateY(-8px) rotate(-45deg);
 }
-
 }
