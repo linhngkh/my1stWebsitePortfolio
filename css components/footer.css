@@ -10,7 +10,7 @@
   margin-top: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-image:
     linear-gradient(
        #F8CEEC,#A88BEB);
@@ -20,17 +20,6 @@
       
 }
 
-
-
-.footer-1 a{
-  text-decoration: none;
-  padding: 20px;
-}
-
-.footer-1 a:hover{
-  color: #fff;
-  transition: all 0.3s ease-out;
-}
 
 .footer-2 a{
   text-decoration: none;
