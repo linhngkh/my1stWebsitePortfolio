@@ -29,13 +29,12 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: "Poppins", sans-serif;
-  width: 100%;
-  min-height: 100vh;
   position: relative;
+  min-height: 100vh;
 }
-
+/* NAV BAR */
 /* set fixed scroll navbar with: position fixed, z-index */
 .nav-container {
   position: fixed;
@@ -56,6 +55,16 @@ body {
   max-width: 1720px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author h3 {
+  color: #fff;
 }
 
 .logo {
@@ -112,17 +121,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2.5rem;
 }
 
 .wrapper .static-txt {
   font-weight: 400;
-  font-size: 60px;
+  font-size: 40px;
   color: var(--white);
 }
 
 .wrapper .dynamic-txts {
   margin-left: 15px;
-  height: 80px;
+  height: 90px;
   line-height: 90px;
   overflow: hidden;
 }
@@ -130,8 +140,8 @@ body {
 .dynamic-txts li {
   color: var(--bg-header-1);
   list-style: none;
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 400;
   position: relative;
   top: 0;
   animation: slide 12s steps(4) infinite;
@@ -145,7 +155,7 @@ body {
 
 .dynamic-txts li span {
   position: relative;
-  margin: 5px 0;
+  margin: 4px 0;
   line-height: 90px;
 }
 
@@ -153,7 +163,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  height: 100%;
+  height: 90px;
   width: 100%;
   background: #23153c;
   border-left: 3px solid #a37ef8;
@@ -170,21 +180,18 @@ body {
   }
 }
 /* INTRODUCTION */
-.introduction-container .introduction {
-  margin: 0 auto;
-  overflow: hidden;
-  display: inline-block;
-  margin-top: 0px;
+.introduction-container {
+  margin-top: 2rem;
 }
 
-.introduction h1 {
+.introduction-container h1 {
   background-image: linear-gradient(90deg, purple, green);
   -webkit-background-clip: text;
   color: transparent;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.introduction h1:hover {
+.introduction-container h1:hover {
   box-shadow: inset 800px 0 0 0 var(--hover-link);
   color: white;
 }
@@ -223,6 +230,23 @@ body {
   font-weight: 300;
 }
 
+/* PROJECT SHOWCASE */
+article {
+  padding: 2rem;
+}
+article h1 {
+  color: #fff;
+}
+
+.thumb-container {
+  width: 150px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.thumb {
+  width: 100px;
+}
 /* END OF BODY */
 /* FOOTER */
 /* if footer has space, then take min-height - footer = 100vh - 10vh = 90vh; */
@@ -231,7 +255,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 5rem;
+  height: 4.5rem;
 
   color: #fff;
   margin-top: auto;
@@ -240,8 +264,8 @@ body {
   justify-content: space-around;
   background-image: linear-gradient(#f8ceec, #a88beb);
 
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .footer-2 a {

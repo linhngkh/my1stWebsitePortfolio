@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Linh Nguyen's Portfolio</title>
-  <link rel="icon" href="./background-image/code-solid.svg" type="image/x-icon">
+  <link rel="icon" href="./assets/code-solid.svg" type="image/x-icon">
   <!-- FONT AWARESOME -->
   <script src="https://kit.fontawesome.com/00325b805d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css components/styles.css">
@@ -18,7 +19,10 @@
   <header>
     <div class="nav-container">
       <nav class="nav-bar">
-        <img class="logo" src="../background-image/myavatar.jpg" alt="avatar">
+        <div class="author">
+          <a href="#"> <img class="logo" src="../assets/myavatar.jpg" alt="avatar"></a>
+          <h3>Linh Nguyen</h3>
+        </div>
 
         <div class="menu-toggle" id="mobile-menu">
           <span class="bar"></span>
@@ -40,17 +44,17 @@
     <div class="wrapper">
       <div class="static-txt">I'm a</div>
       <ul class="dynamic-txts">
-        <li><span>Developer</span></li>
-        <li><span>Team Member</span></li>
+        <li><span>Web Developer</span></li>
+        <li><span>Good-Team Member</span></li>
         <li><span>Problem Solver</span></li>
         <li><span>Life-Long Learner</span></li>
       </ul>
     </div>
     <!-- INTRODUCTION -->
     <div class="introduction-container">
-      <div class="introduction">
-        <h1 >FRONTEND FOCUSED | MERN STACK </h1>
-      </div>
+
+      <h1>FRONTEND FOCUSED | MERN STACK </h1>
+
       <!-- SKILL 1 -->
       <div class="skills">
         <div class="skill-boxies">
@@ -88,7 +92,20 @@
     <!-- END OF INTRODUCTION -->
     <!-- PROJECT SHOWCASE -->
     <article>
+      <h1>Project Showcase</h1>
+      <div class="thumb-container">
+        <img src="./assets/thumb-1.png" alt="stoic" class="thumb" />
 
+        <div>
+          <h2>Project 1</h2>
+          <p>detail</p>
+          <div>
+            <button>GITHUB CODE</button>
+            <button>SEE MORE</button>
+          </div>
+
+        </div>
+      </div>
     </article>
   </main>
   <!-- FOOTER -->
