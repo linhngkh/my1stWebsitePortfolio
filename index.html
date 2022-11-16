@@ -25,26 +25,28 @@
         </div>
 
         <div class="menu-toggle" id="mobile-menu">
+          <!-- hamburger button -->
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </div>
         <ul class="nav-menu">
-          <li><a href="#" class="nav-links"></i>Home</a></li>
-          <li><a href="/resume.html" class="nav-links"></i>Resume</a></li>
-          <li><a href="/portfolio.html" class="nav-links"></i>Portfolio</a></li>
-          <li><a href="#" class="nav-links"></i>Contact</a></li>
+          <li><a href="#home" class="nav-links"></i>Home</a></li>
+          <li><a href="#Resume" class="nav-links" target="_blank"></i>Resume</a></li>
+          <li><a href="#project" class="nav-links"></i>Project</a></li>
+          <li><a href="/timeline.html" class="nav-links" target="_blank"></i>Timeline</a></li>
+          <li><a href="#contact" class="nav-links"></i>Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <!-- MAIN  -->
   <main id="main-content">
-    <h1>Linh Nguyen</h1>
+
     <div class="wrapper">
       <div class="static-txt">I'm a</div>
       <ul class="dynamic-txts">
-        <li><span>Web Developer</span></li>
+        <li><span>FrontEnd Web Developer</span></li>
         <li><span>Good-Team Member</span></li>
         <li><span>Problem Solver</span></li>
         <li><span>Life-Long Learner</span></li>
@@ -58,7 +60,7 @@
       <!-- SKILL 1 -->
       <div class="skills">
         <div class="skill-boxies">
-          <h3> <i class="fa-solid fa-code"></i>Front End </h3>
+          <h3><i class="fa-solid fa-code"></i>Front End </h3>
           <div class="dash"></div>
           <h4>HTML / CSS</h4>
           <h4>JavaScript</h4>
@@ -70,7 +72,7 @@
           <div class="dash"></div>
           <h4>Bootstrap</h4>
           <h4>TailwindCSS</h4>
-          <h4>SCSS</h4>
+          <h4>Material UI</h4>
           <h4>Styled-Components</h4>
         </div>
         <!-- SKILL 3 -->
@@ -91,29 +93,48 @@
     </div>
     <!-- END OF INTRODUCTION -->
     <!-- PROJECT SHOWCASE -->
-    <article>
-      <h1>Project Showcase</h1>
-      <div class="thumb-container">
-        <img src="./assets/thumb-1.png" alt="stoic" class="thumb" />
-
-        <div>
-          <h2>Project 1</h2>
+    <section id="project">
+      <h1>PROJECT SHOWCASE</h1>
+      <div class="project-container">
+        <!-- container1 -->
+        <div class="thumb-container">
+          <img src="./assets/thumb-1.png" alt="stoic" class="thumb" />
+          <h3>Stoic Generator App</h3>
           <p>detail</p>
           <div>
             <button>GITHUB CODE</button>
             <button>SEE MORE</button>
           </div>
-
+        </div>
+        <!-- container2 -->
+        <div class="thumb-container">
+          <img src="./assets/thumb-1.png" alt="stoic" class="thumb" />
+          <h3>Project 1</h3>
+          <p>detail</p>
+          <div>
+            <button>GITHUB CODE</button>
+            <button>SEE MORE</button>
+          </div>
+        </div>
+        <!-- container3 -->
+        <div class="thumb-container">
+          <img src="./assets/thumb-1.png" alt="stoic" class="thumb" />
+          <h3>Project 1</h3>
+          <p>detail</p>
+          <div>
+            <button>GITHUB CODE</button>
+            <button>SEE MORE</button>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
   </main>
   <!-- FOOTER -->
   <footer>
-    <div class="footer-container">
+    <div class="footer-container" id="contact">
       <div class="footer-2">
-        <a href="https://github.com/linh-nguyenkhanh"><i class="fa-brands fa-github fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/linhh-nguyen22/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/linh-nguyenkhanh"><i class="fa-brands fa-github fa-2x"></i>Github</a>
+        <a href="https://www.linkedin.com/in/linhh-nguyen22/"><i class="fa-brands fa-linkedin fa-2x"></i>LinkedIn</a>
       </div>
       <div class="footer-email-form">
         <h3>Contact Me</h3>

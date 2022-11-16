@@ -14,14 +14,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
 html {
   scroll-behavior: smooth;
 }
 
 #animation-canvas {
-  background-size: cover;
+  background-size: contain;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -30,9 +30,19 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-  position: relative;
+  width: 100%;
   min-height: 100vh;
+
+  position: relative;
+}
+
+#main-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
 }
 /* NAV BAR */
 /* set fixed scroll navbar with: position fixed, z-index */
@@ -48,10 +58,10 @@ body {
 
 .nav-bar {
   display: grid;
-  grid-template-columns: 0.2fr auto 1fr;
+  grid-template-columns: 0.1fr auto 1fr;
   align-items: center;
   height: 80px;
-  width: 90%;
+  width: 100%;
   max-width: 1720px;
   margin: 0 auto;
   overflow: hidden;
@@ -82,7 +92,7 @@ body {
 }
 .nav-menu {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   list-style: none;
   text-align: center;
   width: 70%;
@@ -110,19 +120,12 @@ body {
 
 /* END OF HEADER */
 /* MAIN */
-/* avatar set up */
-#main-content {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-}
 
 .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 
 .wrapper .static-txt {
@@ -182,7 +185,7 @@ body {
 }
 /* INTRODUCTION */
 .introduction-container {
-  margin-top: 2rem;
+  padding: 5rem;
 }
 
 .introduction-container h1 {
@@ -233,31 +236,39 @@ body {
 }
 
 /* PROJECT SHOWCASE */
-article {
-  padding: 2rem;
+section {
+  padding: 5rem;
+  
 }
-article h1 {
+.project-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section h1 {
   color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
 }
 
 .thumb-container {
-  width: 150px;
+  width: 300px;
   height: 200px;
   background-color: #fff;
   border-radius: 5px;
 }
 .thumb {
-  width: 100px;
+  width: 300px;
 }
 /* END OF BODY */
 /* FOOTER */
 /* if footer has space, then take min-height - footer = 100vh - 10vh = 90vh; */
 .footer-container {
   /* making footer stay at the bottom by setting body: position relative and footer absolute */
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  height: 4.5rem;
+  height: 4rem;
 
   color: #fff;
   margin-top: auto;
@@ -266,13 +277,13 @@ article h1 {
   justify-content: space-around;
   background-image: linear-gradient(#f8ceec, #a88beb);
 
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  padding-top: 0rem;
 }
 
 .footer-2 a {
   text-decoration: none;
-  padding: 20px;
+  padding: 0 5px;
 }
 
 .footer-2 a i {
@@ -317,7 +328,7 @@ article h1 {
 
 @media only screen and (max-width: 768px) {
   .footer-container {
-    height: 30vh;
+    height: 20vh;
   }
 
   .footer-1,
@@ -440,10 +451,6 @@ article h1 {
 
   .introduction-container {
     margin-bottom: 30px;
-  }
-
-  .introduction-container .introduction h1 {
-    font-size: 30px;
   }
 
   .skills {
