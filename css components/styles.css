@@ -237,28 +237,44 @@ body {
 
 /* PROJECT SHOWCASE */
 section {
-  padding: 5rem;
-  
+  padding: 6rem;
 }
 .project-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 }
 section h1 {
   color: #fff;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 255, 255),
+    0 0 0.2em rgb(255, 255, 255);
+
 }
+
 
 .thumb-container {
   width: 300px;
   height: 200px;
   background-color: #fff;
   border-radius: 5px;
+  
 }
 .thumb {
   width: 300px;
+  border-radius: 5px;
+}
+button {
+  padding: 0.5em;
+  border-radius: 5px;
+  color: #23153c;
+  background-color: #a88beb;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-out;
 }
 /* END OF BODY */
 /* FOOTER */
