@@ -82,6 +82,7 @@ body {
   cursor: pointer;
   width: 60px;
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 .logo:hover {
