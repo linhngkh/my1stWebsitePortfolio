@@ -243,36 +243,41 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
 }
 section h1 {
+  font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
   text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 255, 255),
     0 0 0.2em rgb(255, 255, 255);
-
 }
 
+section p {
+  font-size: 15px;
+  padding-bottom: 10px;
+}
 
 .thumb-container {
   width: 300px;
-  height: 200px;
+  height: 250px;
   background-color: #fff;
   border-radius: 5px;
-  
 }
 .thumb {
   width: 300px;
   border-radius: 5px;
 }
 button {
+  font-size: 15px;
   padding: 0.5em;
   border-radius: 5px;
   color: #23153c;
-  background-color: #a88beb;
+  background-color: #cfbaff;
   border: none;
 }
 button:hover {
+  color: #ffffff;
+  background-color: var(--bg-header-1);
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
